@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>prueba css</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--Etiquetas de layout 2016 lo del libro son anticuadas ya no sirven-->
+
+	<header class="header-principal">
+		<div class="logo"><a href="#">Mi sitio web</a></div>
+		
+		<div class="header-buscar">
+			<input type="text" id="buscar" class="buscar" />
+			<button>Buscar</button>
+		</div>
+		
+	</header>
+	<nav class="nav-principal">
+		<button id="boton" class="cpBtn">
+				<div></div>
+				<div></div>
+				<div></div>
+		</button>
+		<div id="cp">
+			<ul class="ul-menu">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Sobre mi</a></li>
+				<li><a href="">Fotos</a></li>
+				<li><a href="">Portafolio</a></li>
+				<li><a href="">Contacto</a></li>
+				<li><a href="">Enlaces</a></li>
+
+			</ul>
+
+		</div>
+		<ul>
+			<li><a href="">Inicio</a></li>
+			<li><a href="">Blog</a></li>
+			<li><a href="">Sobre mi</a></li>
+			<li><a href="">Fotos</a></li>
+			<li><a href="">Portafolio</a></li>
+			<li><a href="">Contacto</a></li>
+			<li><a href="">Enlaces</a></li>
+
+		</ul>
+	</nav>
+	<main>
+	<section>
+		<article class="articulo-main">
+			<header class="header-segundario">Lorem ipsum dolor sit amet</header>
+			<nav class="nav-segundario">
+				<ul>
+					<li><span>@</span> dd-mm-aaaa 00:00</li>
+					<li><span>@</span>diseño</li>
+					<li><span>@</span>nombre Apellido</li>
+					<li><span>@</span>Añadir comentario</li>
+				</ul>
+			</nav>
+			<p class="p-articulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<footer class="footer-articulo"><a href="#">Seguir liyendo ...</a></footer>	
+		</article>
+		<article class="articulo-main">
+			<header class="header-segundario">Lorem ipsum dolor sit amet</header>
+			<nav class="nav-segundario">
+				<ul>
+					<li><span>@</span> dd-mm-aaaa 00:00</li>
+					<li><span>@</span>diseño</li>
+					<li><span>@</span>nombre Apellido</li>
+					<li><span>@</span>Añadir comentario</li>
+				</ul>
+			</nav>
+			<p class="p-articulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<footer class="footer-articulo"><a href="#">Seguir liyendo ...</a></footer>	
+		</article>
+	</section>
+	<section>
+		<aside class="aside">
+		<section>
+			<article>
+				<header class="header-aside">
+					Sobre mi
+				</header>
+					<div class="div-aside">
+						<div class="div-img"><img src="#"/></div>
+						<div class="div-contenido">
+							<h3>Nombre apellido</h3>
+							<label>Edad</label><br>
+							<label>Ciudad de residencia</label>
+						</div>
+					</div>
+					
+				<footer>
+					<a href="#">Mi perfil publico</a>
+				</footer>
+					
+			</article>
+			<article>
+				<header class="header-aside">Categorias</header>
+				<ul class="ul-aside">
+					<li><span>@</span>categoria1</li>
+					<li><span>@</span>categoria2</li>
+					<li><span>@</span>categoria3</li>
+					<li><span>@</span>categoria4</li>
+					<li><span>@</span>categoria5</li>
+				</ul>	
+			</article>
+		</section>
+	</aside>
+
+	</section>
+	</main>
+	
+	<footer class="footer-principal">
+	(C) Sistemas Uni-2016-curso de php basico
+	</footer>
+
+	<script type="text/javascript">
+		function iniciar () {
+			// body...
+			//width=window.innerWidth;
+			boton=document.getElementById('boton');
+			boton.addEventListener('click',function(){
+
+				cp=document.getElementById('cp');
+				if (cp.style.opacity == 1) {
+					cp.style.opacity = 0;
+					cp.style.left="-260px";
+					
+					}else{
+					
+					cp.style.opacity =1;
+					cp.style.left="0px";
+					}
+			},false);
+			
+		}
+		window.addEventListener('load',iniciar,false);
+	</script>
+	
+		
+	</div>
+</body>
+</html>
